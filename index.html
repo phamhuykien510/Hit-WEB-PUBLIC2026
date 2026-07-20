@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Duong Hoang Cuong chó!!!</h1>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THÔNG TIN CÁ NHÂN</title>
+  </head>
+  <body>
+    <header> 
+        <h1 align="center">THÔNG TIN CÁ NHÂN</h1>
+        <nav align="center">
+            <a href="#gioi-thieu">Giới thiệu </a>   |
+            <a href="#so-thich">Sở thích </a>   |
+            <a href="#ky-nang">Kỹ năng </a>     |
+            <a href="#thoi-khoa-bieu">Thời khóa biểu </a>   | 
+            <a href="#lien-he">Liên hệ </a>      
+        </nav>
+        <hr>
+    </header>
+
+    
+    <section>
+        <h2>Thông tin cá nhân</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTtL9XRc_pYbNiNqO1H0JA4HbstznesNTMWkVNJaB9QQ&s=10" alt="Ảnh đại diện" width="300" height="300">
+        <p><b>Họ và tên:</b> Phạm Huy Kiên</p>
+        <p><b>Tuổi:</b> 19</p>
+        <p><b>Trường:</b> Đại học Công nghiệp Hà Nội</p>
+        <p><b>Ngành học:</b> Công nghệ thông tin</p>
+        <p><b>Lớp:</b> CNTT04</p>
+        <p><b>Email:</b> phamhuykien@gmail.com</p>
+        <p><b>Số điện thoại:</b> 0123456789</p>
+
+        <hr>
+
+        <section id="gioi-thieu">
+            <h2>Giới thiệu</h2>
+            <p>Xin chào, tôi là Phạm Huy Kiên, sinh viên năm thứ 2 chuyên ngành Công nghệ thông tin tại Đại học Công nghiệp Hà Nội. Tôi yêu thích công nghệ và luôn tìm cách học hỏi và phát triển kỹ năng của mình.</p>
+        </section>
+
+        <section id="so-thich">
+            <h2>Sở thích</h2>
+            <p>Tôi yêu thích chơi game cs2 và minecraft cùng với bạn bè, ngoài ra tôi còn thích đá bóng và cầu lông.</p>
+        </section>
+
+        <section id="ky-nang">
+            <h2>Kỹ năng</h2>
+            <p>Tôi có kỹ năng lập trình cơ bản bằng C++ và Java.</p>
+        </section>
+
+         <section id="thoi-khoa-bieu">
+        <h2>Thời khóa biểu</h2>
+
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Thứ</th>
+                    <th>Môn học</th>
+                    <th>Phòng học</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Thứ 2</td>
+                    <td>Lập trình Web</td>
+                    <td>101</td>
+                </tr>
+
+                <tr>
+                    <td>Thứ 3</td>
+                    <td>Cấu trúc dữ liệu</td>
+                    <td>201</td>
+                </tr>
+
+                <tr>
+                    <td>Thứ 4</td>
+                    <td>Toán rời rạc</td>
+                    <td>301</td>
+                </tr>
+
+                <tr>
+                    <td>Thứ 5</td>
+                    <td>Cơ sở dữ liệu</td>
+                    <td>401</td>
+                </tr>
+
+                <tr>
+                    <td>Thứ 6</td>
+                    <td>Tiếng Anh</td>
+                    <td>501</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="center">
+                        Tổng cộng 5 buổi học
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+    <hr>
+
+    <section>
+        <h2>Form liên hệ</h2>
+
+        <form>
+
+            <p>
+                Họ tên:<br>
+                <input type="text" name="hoTen">
+            </p>
+
+            <p>
+                Email:<br>
+                <input type="email" name="email">
+            </p>
+
+            <p>
+                Mật khẩu:<br>
+                <input type="password" name="matKhau">
+            </p>
+
+            <p>
+                Giới tính:<br>
+
+                <input type="radio" name="gioiTinh" value="Nam">
+                Nam
+
+                <input type="radio" name="gioiTinh" value="Nữ">
+                Nữ
+            </p>
+
+            <p>
+                Sở thích:<br>
+
+                <input type="checkbox" value="Đọc sách">
+                Đọc sách
+
+                <input type="checkbox" value="Nghe nhạc">
+                Nghe nhạc
+
+                <input type="checkbox" value="Lập trình">
+                Lập trình
+            </p>
+
+            <p>
+                Ngành học:<br>
+
+                <select>
+                    <option>Công nghệ thông tin</option>
+                    <option>Khoa học máy tính</option>
+                    <option>An toàn thông tin</option>
+                    <option>Kỹ thuật phần mềm</option>
+                </select>
+            </p>
+
+            <p>
+                Giới thiệu bản thân:<br>
+
+                <textarea rows="5" cols="40"></textarea>
+            </p>
+
+            <input type="submit" value="Gửi">
+
+        </form>
+
+        <hr>
+    </section>
+    <section id="lien-he">
+        <h2>Liên hệ</h2>
+
+        <p>
+            <a href="https://facebook.com" target="_blank">
+                Facebook
+            </a>
+        </p>
+
+        <p>
+            <a href="https://github.com" target="_blank">
+                Github
+            </a>
+        </p>
+
+        <p>
+            <a href="mailto:phamtrungkien@gmail.com">
+                Gmail
+            </a>
+        </p>
+
+        <hr>
+    </section>
+
+    <!-- Cuối trang -->
+    <footer align="center">
+        <p>&copy; 2026 - Phạm Huy Kiên</p>
+    </footer>
+
+   
+    
+  </body>
 </html>
